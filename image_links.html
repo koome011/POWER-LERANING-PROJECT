@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0; 
+    }
+    nav {
+        background-color: #333;
+        color: #fff;
+        padding: 10px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 999;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0px 20px;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        padding: 0px 10px;
+        text-align: center;
+        display: inline;
+        margin-right: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+    }
+    section {
+        padding: 80px 20px 20px; /* Add padding to top to prevent content from being hidden behind nav */
+        margin-top: 60px; /* Ensure content starts below the fixed nav */
+        background-color: #f0f0f0;
+        height: 100%;
+    }
+    h2, p, ol{
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    img{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        max-width: 100%;
+        border-radius: 10%;
+    } 
+    .images{
+        margin-left: auto;
+        margin-right: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 10px;
+        width: 60%;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .images img{
+        aspect-ratio: 1/1;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .links ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0px 20px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .links ul li {
+        text-align: center;
+        display: flex;
+        margin-right: 10px;
+        padding: 10px;
+        justify-content: center;
+        align-items: center;
+    }
+    .links ul li a {
+        color: #000000;
+        text-decoration: none;
+    }
+</style>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home🏠</a></li>
+            <li><a href="#gallery">Gallery🏞️</a></li>
+            <li><a href="#menu">Menu🥪🍜</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <h2 >HOME</h2>
+        <div>
+            <p>Hello👋, Welcome to our page where we will be going through
+                <ol>Technology</ol>
+                <ol>Nature</ol>
+                <ol>Food</ol>
+            </p>
+            <img src="https://images.pexels.com/photos/123335/pexels-photo-123335.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Vision Pro" loading="lazy">
+            <p>We are excited to have you here❤️</p>
+        </div>
+    </section>
+    <section id="gallery">
+        <div >
+            <h2>GALLERY: Nature's Beauty</h2>
+            <p>Check out our collection on nature images below.. Beautiful🏞️</p>
+        </div>
+        <div class="images">
+            <img src="https://images.pexels.com/photos/707344/pexels-photo-707344.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 1">
+            <img src="https://images.pexels.com/photos/3408744/pexels-photo-3408744.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 2">
+            <img src="https://images.pexels.com/photos/1770809/pexels-photo-1770809.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 3">
+            <img src="https://images.pexels.com/photos/1624504/pexels-photo-1624504.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 4">
+            <img src="https://images.pexels.com/photos/629162/pexels-photo-629162.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 5">
+            <img src="https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 6">
+            <img src="https://images.pexels.com/photos/2088202/pexels-photo-2088202.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 7">
+            <img src="https://images.pexels.com/photos/321552/pexels-photo-321552.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 8">
+            <img src="https://images.pexels.com/photos/2918152/pexels-photo-2918152.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 9">
+            <img src="https://images.pexels.com/photos/2862070/pexels-photo-2862070.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 10">
+            <img src="https://images.pexels.com/photos/1093308/pexels-photo-1093308.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 11">
+            <img src="https://images.pexels.com/photos/54514/pexels-photo-54514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Nature 12">
+        </div>
+    </section>
+    <section>
+        <div id="menu">
+            <h2>MENU: A Culinary Journey</h2>
+            <div class="links">
+                <ul>
+                    <li><a href="https://images.pexels.com/photos/825661/pexels-photo-825661.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank">Pizza🍕</a></li>
+                    <li><a href="https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank">Burger🍔</a></li>
+                    <li><a href="https://media.istockphoto.com/id/1136546066/photo/pieces-of-delicious-japanese-sushi-frozen-in-the-air.webp?s=1024x1024&w=is&k=20&c=7zyf0iuRj-uFuyMvXx3XBIwzf8mKO-JkLp-aN4BTd5c=" target="_blank">Sushi🍣</a></li>
+                    <li><a href="https://images.pexels.com/photos/1279330/pexels-photo-1279330.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank">Pasta🍝</a></li>
+                    <li><a href="https://images.pexels.com/photos/8448322/pexels-photo-8448322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank">Tacos🌮</a></li>
+                    <li><a href="https://images.pexels.com/photos/1059905/pexels-photo-1059905.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">Saland🥗</a></li>
+                    <li><a href="https://images.pexels.com/photos/1251208/pexels-photo-1251208.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" target="_blank">Steaks🥩</a></li>
+                    <li><a href="https://images.pexels.com/photos/884600/pexels-photo-884600.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">Ramen🍜</a></li>
+                    <li><a href="https://images.pexels.com/photos/1647163/pexels-photo-1647163.jpeg?auto=compress&cs=tinysrgb&w=600" target="_blank">Sandwich🥪</a></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
